@@ -1,0 +1,42 @@
+#side-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .sub-menu {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .has-arrow:after {
+    content: '\25bc';
+    float: right;
+  }
+  
+  .has-arrow[aria-expanded="true"]:after {
+    transform: rotate(180deg);
+  }
+  
+  #side-menu li:hover .sub-menu {
+    display: block;
+  }
+  
+  #side-menu li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .btn-logout{
+    background-color: transparent;
+  border: white;
+}
