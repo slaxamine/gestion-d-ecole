@@ -58,14 +58,16 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="javascript: void(0);" class="has-arrow waves-effect">
-                                <i class="bx bx-receipt"></i>
-                                <span key="t-invoices">Factures</span>
+                            <a href="/etudiant" class="waves-effect">
+                                <i class="bx bxs-user-detail"></i>
+                                <span key="t-students">Etudiants</span>
                             </a>
-                            <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="invoices-list.html" key="t-invoice-list">Liste des Factures</a></li>
-                                <li><a href="invoices-detail.html" key="t-invoice-detail">Détail des Factures</a></li>
-                            </ul>
+                        </li>
+                        <li>
+                            <a href="/module" class="waves-effect">
+                                <i class="bx bx-book-content"></i>
+                                <span key="t-modules">Modules</span>
+                            </a>
                         </li>  
                         <li>
                             <a href="calendar.html" class="waves-effect">

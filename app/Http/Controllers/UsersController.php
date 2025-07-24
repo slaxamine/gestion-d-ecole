@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Yajra\DataTables\Facades\DataTables;
 
 class UsersController extends Controller
 {
@@ -40,7 +41,7 @@ class UsersController extends Controller
         $data = User::where('id','=',$id)->get();
         return response()->json($data);
     }
-    public function edit(Request $request){    
+    public function edit(Request $request){
         $request->validate([
                 'nommodif'=>'required',
                 'emailmodif'=>'required|email',
@@ -60,7 +61,7 @@ class UsersController extends Controller
         $fonction = $request->input('fonctionmodif');
         $genre = $request->input('genremodif');
         $email = $request->input('emailmodif');
-        
+
         User::where('id','=',$id)->update([
             'lastname' => $lastname,
             'email' => $email,
@@ -70,7 +71,8 @@ class UsersController extends Controller
             'datedebut' => $datedebut,
             'fonction' => $fonction,
             'genre' => $genre,
-        ]); }
+        ]);
+    }
 
     
         public function index(){

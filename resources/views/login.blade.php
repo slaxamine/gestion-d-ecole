@@ -43,6 +43,7 @@
                        
                             <div class="p-2">
                                 <form class="form-horizontal" action="{{ route('login.post') }}" method="post">
+                                    @csrf
                                
 
                                     <div class="mb-3">

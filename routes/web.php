@@ -37,13 +37,13 @@ Route::post('/get_classe', [ClassesController::class, 'getClasse']);
 Route::post('/get_notes', [NotesController::class, 'getNotes']);
 Route::post('/get_note', [NotesController::class, 'getNote']);
 
-Route::get('/destroyu/{id?}',[UsersController::class,'destroy']);
-Route::get('/destroyf/{id?}',[FilliereController::class,'destroy']);
-Route::get('/destroye/{id?}',[EtudiantsController::class,'destroy']);
-Route::get('/destroyp/{id?}',[ProfesseursController::class,'destroy']);
-Route::get('/destroym/{id?}',[ModuleController::class,'destroy']);
-Route::get('/destroyc/{id?}',[ClassesController::class,'destroy']);
-Route::get('/destroyn/{id?}',[NotesController::class,'destroy']);
+Route::delete('/users/{id}',[UsersController::class,'destroy']);
+Route::delete('/fillieres/{id}',[FilliereController::class,'destroy']);
+Route::delete('/etudiants/{id}',[EtudiantsController::class,'destroy']);
+Route::delete('/profs/{id}',[ProfesseursController::class,'destroy']);
+Route::delete('/modules/{id}',[ModuleController::class,'destroy']);
+Route::delete('/classes/{id}',[ClassesController::class,'destroy']);
+Route::delete('/notes/{id}',[NotesController::class,'destroy']);
 
 
 
@@ -69,9 +69,7 @@ Route::get('/classe',[ClassesController::class,'getfill']);
 Route::get('/note',[NotesController::class,'getk']);
 
 
-Route::get('/filliere',function(){
-	return view('/tables/filliere');
-});
+
 Route::get('/contact',function(){
 	return view('/tables/contact');
 });
