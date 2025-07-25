@@ -4,7 +4,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Login | Skote - Admin & Dashboard Template</title>
+    <title>Login | EMSI - School Management</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesbrand" name="author" />
@@ -41,6 +41,24 @@
                             </div>
                         </div>
                        
+                            <div class="auth-logo">
+                                <a href="index.html" class="auth-logo-light">
+                                    <div class="avatar-md profile-user-wid mb-4">
+                                        <span class="avatar-title rounded-circle bg-light">
+                                            <img src="https://education.oracle.com/file/general/EMSI_New_Logo.png" alt="EMSI Logo" class="rounded-circle" height="34">
+                                        </span>
+                                    </div>
+                                </a>
+
+                                <a href="index.html" class="auth-logo-dark">
+                                    <div class="avatar-md profile-user-wid mb-4">
+                                        <span class="avatar-title rounded-circle bg-light">
+                                            <img src="https://education.oracle.com/file/general/EMSI_New_Logo.png" alt="EMSI Logo" class="rounded-circle" height="34">
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+
                             <div class="p-2">
                                 <form class="form-horizontal" action="{{ route('login.post') }}" method="post">
                                     @csrf

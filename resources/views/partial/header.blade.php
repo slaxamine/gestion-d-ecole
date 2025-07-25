@@ -4,7 +4,7 @@
 <head>
     <meta name="csrf-token" content="{{ csrf_token() }}" />
     <meta charset="utf-8" />
-    <title>Alpha school</title>
+    <title>EMSI - School Management</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <script src="assets/libs/jquery/jquery.min.js"></script>
@@ -51,7 +51,7 @@
                        
                         <a href="/users" class="logo logo-light">
                             <span class="logo-lg">
-                                <img src="assets/images/logo-light.png" alt="" height="21" style="margin-top: 30px" >
+                                <img src="https://education.oracle.com/file/general/EMSI_New_Logo.png" alt="EMSI Logo" height="50" style="margin-top: 15px; margin-left: -20px;">
                             </span>
                         </a>
                     </div>
